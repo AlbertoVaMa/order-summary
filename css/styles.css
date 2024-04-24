@@ -1,0 +1,152 @@
+:root{
+
+    --Paleblue: hsl(225, 100%, 94%);
+    --BrightBlue: hsl(245, 75%, 52%);
+
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+    --White: #fff;
+
+    --FontP: 'Red Hat Display', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem=10px*/
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background-image: url(../images/pattern-background-desktop.svg);
+}
+
+p{
+    font-size: 1.6rem;
+    margin: 0;
+    color: var(--Desaturatedblue);
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: var(--FontP);
+    font-weight: bold;
+    font-size: 2.6rem;
+}
+
+.container{
+    height: 65rem;
+    width: 40rem;
+    border-radius: 2rem;
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 5rem;
+    background-color: var(--Verypaleblue);
+    overflow: hidden;
+}
+
+.container__img{
+    background-image: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.container__odesc{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container__info{
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 1rem;
+    background-color: var(--Paleblue);
+    margin: 2rem 3rem;
+    place-items: center;
+}
+
+.time{
+    font-weight: bold;
+    color: #000;
+}
+
+.container__info {
+    place-items: center;
+    place-content: center;
+    justify-content: flex-start;
+}
+
+.container__price{
+    display: block;
+
+}
+
+.container__button{
+    display: grid;
+    margin: 2rem 3rem;
+}
+
+.button{
+    margin-left: 10rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.button:hover{
+    cursor: pointer;
+    color: #ad62c4;
+}
+
+.button__yes{
+    background-color: var(--BrightBlue);
+    border-radius: 1rem;
+    color: var(--White);
+    text-align: center;
+    align-items: center;
+    place-content: center;
+    font-size: 1.5rem;
+    box-shadow: 10px 10px 5px 0px rgba(77,93,214,1);
+}
+
+.button__no{
+    background-color: var(--Verypaleblue);
+    border-radius: 1rem;
+    color: var(darken(--Paleblue),  10);
+    place-content: center;
+    margin: 2rem 0 0 0;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.button__yes:hover{
+    cursor: pointer;
+    background-color: #ad62c4;
+}
+
+.button__no:hover{
+    cursor: pointer;
+    color: #000;
+}
+
+.attribution{
+    text-align: center;    
+    color: var(--BrightBlue);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
